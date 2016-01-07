@@ -1,14 +1,13 @@
-/// <reference path="./window/window.ts" />
-
-import {Inject, provide} from 'angular2/core';
-
-import {Window} from './window/window';
+import {provide} from 'angular2/core';
 
 export class LocalStorage {
     public localStorage:any;
 
-    constructor(@Inject(Window) window:Window) {
-        this.localStorage = window.getLocalStorage();
+    constructor() {
+        if (!localStorage) {
+            throw new Error('Current browser does not support Local Storage');
+        }
+        this.localStorage = localStorage;
     }
 
     public set(key:string, value:string):void {
@@ -33,5 +32,5 @@ export class LocalStorage {
 }
 
 export const LOCAL_STORAGE_PROVIDERS:any[] = [
-    provide(LocalStorage, {useClass: LocalStorage, deps: [Window]})
+    provide(LocalStorage, {useClass: LocalStorage})
 ];
