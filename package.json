@@ -1,6 +1,6 @@
 {
   "name": "angular2-local-storage",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "An Angular 2 TypeScript module that gives access to the browsers local storage.",
   "main": "index.js",
   "scripts": {
