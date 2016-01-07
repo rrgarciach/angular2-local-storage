@@ -1,0 +1,24 @@
+{
+  "name": "angular2-local-storage",
+  "version": "0.1.0",
+  "description": "An Angular 2 TypeScript module that gives access to the browsers local storage.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rrgarciach/angular2-local-storage.git"
+  },
+  "keywords": [
+    "localstorage",
+    "typescript",
+    "angular2"
+  ],
+  "author": "Ruy R. Garcia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rrgarciach/angular2-local-storage/issues"
+  },
+  "homepage": "https://github.com/rrgarciach/angular2-local-storage#readme"
+}
