@@ -1,4 +1,4 @@
-import {provide} from 'angular2/core';
+import {provide} from '@angular/core';
 
 export class LocalStorage {
     public localStorage:any;
